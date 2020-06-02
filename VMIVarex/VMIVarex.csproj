@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <COMReference Include="{215d64d2-031c-33c7-96e3-61794cd1ee61}">
+      <Guid>215d64d2-031c-33c7-96e3-61794cd1ee61</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="{d37e2a3e-8545-3a39-9f4f-31827c9124ab}">
+      <Guid>d37e2a3e-8545-3a39-9f4f-31827c9124ab</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UI\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <HintPath>..\..\..\..\..\LEADTOOLS 20\Bin\Dotnet4\Win32\Leadtools.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs">
+      <HintPath>..\..\..\..\..\LEADTOOLS 20\Bin\Dotnet4\Win32\Leadtools.Codecs.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Cmp">
+      <HintPath>..\..\..\..\..\LEADTOOLS 20\Bin\Dotnet4\Win32\Leadtools.Codecs.Cmp.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Controls.WinForms">
+      <HintPath>..\..\..\..\..\LEADTOOLS 20\Bin\Dotnet4\Win32\Leadtools.Controls.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Dicom">
+      <HintPath>..\..\..\..\..\LEADTOOLS 20\Bin\Dotnet4\Win32\Leadtools.Dicom.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.MedicalViewer">
+      <HintPath>..\..\..\..\..\LEADTOOLS 20\Bin\Dotnet4\Win32\Leadtools.MedicalViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Windows.Forms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
